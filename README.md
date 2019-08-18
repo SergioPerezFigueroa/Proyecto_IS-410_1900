@@ -6,7 +6,7 @@
                               Departamento de Ingenieria en Sistemas.
           
           Tema:        Analisis y Elaboracion de proyecto para la compañia Aprendamos. 
-          Catedratico: Ing. Miguel Sauceda.
+          Catedratico: Ing. Miguel Antonio Sauceda Barahona.
           Asignatura:  Programacion Orientada a Objetos. 
           
           Estudiantes:        Hector David Maradiaga Garcia.   20111007007
