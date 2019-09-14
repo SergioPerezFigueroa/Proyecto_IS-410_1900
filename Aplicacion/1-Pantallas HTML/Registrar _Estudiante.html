@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Aprendamos_registrar_Estudiante</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css">
+    <script src="main.js"></script>
+    <link rel="icon" href="img/logo.png">
+
+    <style>
+
+        .Parrafo{
+            text-align: center
+        }
+
+        .main{
+            margin : 0px 28%;
+            padding: 15px;
+            
+            background-color: white;
+        }
+
+        .fondo{
+            background-image:url(img/fondo.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+    
+    </style>
+
+
+    <img src="img/logo.png" style="height: 200px; margin : 0px 28%;">
+
+</head>
+<body class="fondo">
+    
+    
+
+    <div class="main">
+        
+        <p class="Parrafo">Registro de Estudiante</p>        
+        
+        <hr>
+        <table style="width:100%">
+            <tr>
+                <td>
+                    <p>Nombre</p>
+                    <input type="text" placeholder="Ingrese su Nombre">
+                </td>
+                <td>
+                    <p>Apellido</p>
+                    <input type="text" placeholder="Ingrese su Apellido">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <p>Sexo</p>
+                    <label>Masculino<input type="radio" name"Sexo" value="M"</label>
+                    <label>femenino<input type="radio" name"Sexo" value="F"</label>
+                    <label>Indefinido<input type="radio" name"Sexo" value="?"</label>
+
+                </td>
+                <td>
+                    <p>Telefono</p>
+                    <input type="text" placeholder="Ingrese Telefono">
+
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <p>ID</p>
+                    <input type="text" placeholder="Ingrese su ID">
+                </td>
+                <td>
+                    <p>E-Mail</p>
+                    <input type="text" placeholder="Ingrese su E-Mail">
+                    
+                    
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <p>Password</p>
+                    <input type="password" placeholder="Ingrese su Password">
+                </td>
+                <td>
+                    <p>Confirmacion Password</p>
+                    <input type="text" placeholder="Ingrese nuevamente el password">                    
+                </td>
+            </tr>
+            <tr>     
+                <td>
+                    <p>Dirrección</p>
+                    <input type="text" placeholder="Ingrese su Dirrección">                   
+                </td>        
+                <td>
+                    <p>Nacionalidad</p>
+                    <select id="pais">
+                        <option value="Honduras">Honduras</option>
+                        <option value="Guatemala">Guatemala</option>
+                        <option value="Costa Rica">Costa Rica</option>
+                        <option value="Panamá">Panamá</option>
+                        <option value="El Salvador">El Salvador</option>
+                    </select>
+                </td>
+            </tr>
+        </table>
+        <hr>
+
+        <button type="button" style="width: 100%" onclick="">Registrar</button>
+        
+        <hr>
+    </div>
+
+
+
+
+    <script> </script>
+</body>
+</html>
