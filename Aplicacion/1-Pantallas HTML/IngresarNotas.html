@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Aprendamos</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css">
+    <script src="main.js"></script>
+    <link rel="icon" href="img/logo.png">
+
+    <style>
+
+        .Parrafo{
+            text-align: center
+        }
+
+        .main{
+            margin : 50px 35%;
+            padding: 15px;
+            height: 200px;
+            background-color: white;
+        }
+        
+        .fondo{
+            background-image:url(img/fondo.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+
+        .table{
+            margin : 50px 25%;
+            padding: 15px;
+            background-color: white;
+        }
+    
+    </style>
+
+
+    <img src="img/logo.png" style="height: 100px; margin : 0px 35%;">
+
+</head>
+<body class="fondo">
+    
+    
+
+    <div class="main">
+        <h5 class="Parrafo">Ingresar Calificaciones</h5>
+        <hr>
+        <p class="Parrafo">Curso</p>
+        <select id="curso" style="width:100%" >
+            <option value=""></option>
+            <option value="HTML DESDE CERO">HTML DESDE CERO</option>
+            <option value="JAVA DESDE CERO">JAVA DESDE CERO</option>
+            <option value="PHP DESDE CERO">PHP DESDE CERO</option>
+            <option value="POSTGRESQL DESDE CERO">POSTGRESQL DESDE CERO</option>
+            <option value="JAVASCRIPT DESDE CERO">JAVASCRIPT DESDE CERO</option>
+        </select><br>
+        <button type="button" style="margin: 15px 40%;" onclick="">Mostrar</button><br>
+        <hr>
+    </div>
+
+    <div class="table">
+
+        <table border="1" cellspacing="0" cellpadding="15" style="width:100%">
+            <thead>
+                <tr>
+                    <th>ALUMNO</th>
+                    <th>ID</th>
+                    <th>CALIFICACION</th>                  
+                </tr>
+            </thead>
+            <tbody id="table-calificaciones">
+                <tr>
+                    <td>Fausto Alejandro Flores Zepeda</td>
+                    <td>20151001553</td>
+                    <td><input type="text"> </td>
+                </tr>
+                <tr>
+                    <td>Sergio Reiniery Garay</td>
+                    <td>20151001554</td>
+                    <td><input type="text"> </td>
+                </tr>
+                <tr>
+                    <td>Juan Orlando Hernandez Alvarado</td>
+                    <td>20151001555</td>
+                    <td><input type="text"> </td>
+                </tr>
+
+            </tbody>
+
+            
+        </table>  
+        
+        <button type="button" style="margin: 15px 40%;" onclick="">Enviar</button>
+
+    </div>
+
+
+    <script> </script>
+</body>
+</html>
+
