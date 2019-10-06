@@ -1,2 +1,3 @@
-select * from persona
-order by idpersona;
+alter table administradores
+add constraint UQ_administradores_idpersona
+		unique (idpersona);
