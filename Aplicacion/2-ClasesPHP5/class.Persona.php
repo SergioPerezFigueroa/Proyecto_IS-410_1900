@@ -1,93 +1,119 @@
 <?php
 
-error_reporting(E_ALL);
 
-
-
-if (0 > version_compare(PHP_VERSION, '5')) {
-    die('This file was generated for PHP 5');
-}
-
-
-class Persona
-{
-    // --- ASSOCIATIONS ---
-
-
-    // --- ATTRIBUTES ---
-
-  
-    private $Nombre = null;
-    private $Apellido = null;
-    private $ID = 0;
-    private $Edad = null;
-    private $Direccion = null;
-    private $Nacionalidad = null;
-    private $Correo = null;
-    private $Password = null;
-    private $Telefono = null;
-
-    // --- OPERATIONS ---
-
+class Persona{
    
-    public function setNombre( String $Apellido)
-    {
-        $returnValue = null;
-        return $returnValue;
-    }
+  //Propiedades:
+    private $Nombre;
+    private $Apellido;
+    private $IdPersona;
+    private $Edad;
+    private $Direccion;
+    private $Nacionalidad;
+    private $Correo;
+    private $Password;
+    private $Telefono;
 
-    public function getNombre(){
-     
-    }
-    public function setEdad( String $Edad){
-        
-    }
+    // Metodos
+
+   //Constructor asi se crea un constructor de una clase
     
-    public function setApellido( String $Apellido){
+   function __construct($Nombre, $Apellido, $IdPersona, $Edad, $Direccion, $Nacionalidad, $Correo, $Password, $Telefono) {
+       $this->Nombre = $Nombre;
+       $this->Apellido = $Apellido;
+       $this->IdPersona = $IdPersona;
+       $this->Edad = $Edad;
+       $this->Direccion = $Direccion;
+       $this->Nacionalidad = $Nacionalidad;
+       $this->Correo = $Correo;
+       $this->Password = $Password;
+       $this->Telefono = $Telefono;
+   }
+
+   
+    
+    public function imprimeNombre(){
+        echo 'mi nombre es'.$this->getNombre().' '.$this->getApellido();
         
     }
 
-    public function setCorreo( String $Correo){
-       
+
+    //metodos getters
+    function getNombre() {
+        return $this->Nombre;
     }
 
-   
-    public function getApellido(){      
+    function getApellido() {
+        return $this->Apellido;
     }
 
-   
-    public function setID($ID){
-     
+    function getIdPersona() {
+        return $this->IdPersona;
     }
 
-    public function getID(){
-       
+    function getEdad() {
+        return $this->Edad;
     }
 
-  
-
-    public function getCorreo(){
-        
+    function getDireccion() {
+        return $this->Direccion;
     }
+
+    function getNacionalidad() {
+        return $this->Nacionalidad;
+    }
+
+    function getCorreo() {
+        return $this->Correo;
+    }
+
+    function getPassword() {
+        return $this->Password;
+    }
+
+    function getTelefono() {
+        return $this->Telefono;
+    }
+
+    function setNombre($Nombre) {
+        $this->Nombre = $Nombre;
+    }
+
+    //metodos setters
+    function setApellido($Apellido) {
+        $this->Apellido = $Apellido;
+    }
+
+    function setIdPersona($IdPersona) {
+        $this->IdPersona = $IdPersona;
+    }
+
+    function setEdad($Edad) {
+        $this->Edad = $Edad;
+    }
+
+    function setDireccion($Direccion) {
+        $this->Direccion = $Direccion;
+    }
+
+    function setNacionalidad($Nacionalidad) {
+        $this->Nacionalidad = $Nacionalidad;
+    }
+
+    function setCorreo($Correo) {
+        $this->Correo = $Correo;
+    }
+
+    function setPassword($Password) {
+        $this->Password = $Password;
+    }
+
+    function setTelefono($Telefono) {
+        $this->Telefono = $Telefono;
+    }
+
 
     
-  
-
-   
-    public function getEdad(){
-        
-    }
-
-   
-    public function setNacionalidad(){
-      
-    }
-
-    
-    public function getNacionalidad(){
-        
-    }
-
 } 
 
 ?>
