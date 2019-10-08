@@ -6,7 +6,6 @@
     <title>Aprendamos_registrar_Administrador</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" media="screen" href="main.css">
-    <script src="main.js"></script>
     <link rel="icon" href="img/logo.png">
 
     <style>
@@ -35,7 +34,7 @@
 
 </head>
 <body class="fondo">
-        <form  method= "POST" action="class.Administrador.php">
+       <!--<form  method= "POST" action="class.Administrador.php">--> 
     
 
     <div class="main">
@@ -47,35 +46,36 @@
             <tr>
                 <td>
                     <p>Nombre</p>
-                    <input type="text" name="Nombre" placeholder="Ingrese su Nombre">
+                    <input type="text" name="nombre" id="nombre" placeholder="Ingrese su Nombre">
                 </td>
                 <td>
                     <p>Apellido</p>
-                    <input type="text" name="Apellido"placeholder="Ingrese su Apellido">
+                    <input type="text" name="apellido" id="apellido" placeholder="Ingrese su Apellido">
                 </td>
             </tr>
             <tr>
                 <td>
                     <p>Sexo</p>
-                    <label>Masculino<input type="radio" name="Sexo" value="M"</label>
-                    <label>femenino<input type="radio" name="Sexo" value="F"</label>
-                    <label>Indefinido<input type="radio" name="Sexo" value="?"</label>
+                
+                    <label>Masculino<input type="radio" name="Sexo" id="masculino" value="M"></label>
+                    <label>Femenino<input type="radio" name="Sexo" id="femenino" value="F"></label>
+                    
 
                 </td>
                 <td>
                     <p>Telefono</p>
-                    <input type="text" name="Telefono" placeholder="Ingrese Telefono">
+                    <input type="text" name="telefono" id="telefono" placeholder="Ingrese Telefono">
 
                 </td>
             </tr>
             <tr>
                 <td>
                     <p>ID</p>
-                    <input type="text"name="ID" placeholder="Ingrese su ID">
+                    <input type="text" name="id" id="id" placeholder="Ingrese su ID">
                 </td>
                 <td>
                     <p>E-Mail</p>
-                    <input type="text" name="email" placeholder="Ingrese su E-Mail">
+                    <input type="text" name="email" id="email" placeholder="Ingrese su E-Mail">
                     
                     
                 </td>
@@ -83,17 +83,17 @@
             <tr>
                 <td>
                     <p>Password</p>
-                    <input type="password" name="Password" placeholder="Ingrese su Password">
+                    <input type="password" name="password" id="password" placeholder="Ingrese su Password">
                 </td>
                 <td>
                     <p>Confirmacion Password</p>
-                    <input type="password" name="Password" placeholder="Ingrese nuevamente el password">                    
+                    <input type="password" name="password" id="password2" placeholder="Ingrese nuevamente el password">                    
                 </td>
             </tr>
             <tr>     
                 <td>
                     <p>Dirrección</p>
-                    <input type="text" name="Administrador" placeholder="Ingrese su Dirrección">                   
+                    <input type="text" name="direccion" id="direccion" placeholder="Ingrese su Dirrección">                   
                 </td>        
                 <td>
                     <p>Nacionalidad</p>
@@ -109,15 +109,16 @@
         </table>
         <hr>
 
-        <input type="submit" value="Registrar">
+        <Button id="btn-guardar" type="button" >Guardar</Button>
+
+        <!--<input type="submit" value="Registrar">
+        <script src="main.js"></script>-->
         
         <hr>
     </div>
 
-
-
-
-    <script> </script>
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/controlador.js"></script>
 </form> 
 </body>
 </html>
