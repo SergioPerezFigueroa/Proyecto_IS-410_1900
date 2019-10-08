@@ -38,7 +38,7 @@
 </head>
 <body class="fondo">
     
-    
+        <form  method= "POST" action="class.Curso.php">
 
     <div class="main">
         <hr>
@@ -87,11 +87,11 @@
                 </tr>
                     <td>
                         <p>Lugar:</p>
-                        <input type="text" placeholder="Ingrese la Direccion.">
+                        <input type="text" name="Lugar" placeholder="Ingrese la Direccion.">
                     </td>
                     <td>
                         <p>Horario:</p>
-                        <input type="text" placeholder="Ingrese su ID">
+                        <input type="text" "" name="ID" placeholder="Ingrese su ID">
                     </td>
 
                 </tr>
@@ -101,12 +101,12 @@
                     <td>
 
                         <p>Duracion:</p>
-                        <input type="txt" placeholder="Ingrese las horas">
+                        <input type="txt" name="horas" placeholder="Ingrese las horas">
               
                     </td>
                     <td>
                         <p>seccion:</p>
-                        <input type="text" placeholder="Ingrese el numero de seccion"><br>
+                        <input type="text"name="seccion" placeholder="Ingrese el numero de seccion"><br>
             </td>
 
         </tr>
@@ -117,14 +117,15 @@
 
     
         <p>Precio:</p>
-        <input type="text" placeholder="Ingrese el Precio"><br>
-        <button type="button" style="margin: 15px 40%;" onclick="">Crear Curso </button> <br>
+        <input type="text"name="Precio" placeholder="Ingrese el Precio"><br>
+        <input type="submit" value="Crear Curso">
 
         <hr>
 
     </div>
 
     <script> </script>
+</form> 
 </body>
 </html>
 

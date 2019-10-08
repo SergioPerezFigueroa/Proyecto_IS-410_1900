@@ -36,8 +36,9 @@
 </head>
 <body class="fondo">
     
+    <form  method= "POST" action="class.Cliente.php">
+        
     
-
     <div class="main">
         
         <p class="Parrafo">Registro de Estudiante</p>        
@@ -47,7 +48,7 @@
             <tr>
                 <td>
                     <p>Nombre</p>
-                    <input type="text" placeholder="Ingrese su Nombre">
+                    <input type="text" name "nombre" placeholder="Ingrese su Apellido" >
                 </td>
                 <td>
                     <p>Apellido</p>
@@ -109,7 +110,8 @@
         </table>
         <hr>
 
-        <button type="button" style="width: 100%" onclick="">Registrar</button>
+      
+        <input type="submit" value="Registrar">
         
         <hr>
     </div>
@@ -118,5 +120,6 @@
 
 
     <script> </script>
+</form> 
 </body>
 </html>

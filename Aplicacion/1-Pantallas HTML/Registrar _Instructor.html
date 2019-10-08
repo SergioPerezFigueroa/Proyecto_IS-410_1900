@@ -35,8 +35,8 @@
 
 </head>
 <body class="fondo">
-    
-    
+    <form  method= "POST" action="class.Instructores.php">
+        
 
     <div class="main">
         
@@ -47,22 +47,22 @@
             <tr>
                 <td>
                     <p>Nombre</p>
-                    <input type="text" placeholder="Ingrese su Nombre">
+                    <input type="text" name="Nombre" placeholder="Ingrese su Nombre">
                 </td>
                 <td>
                     <p>Apellido</p>
-                    <input type="text" placeholder="Ingrese su Apellido">
+                    <input type="text" name="Apellido" placeholder="Ingrese su Apellido">
                 </td>
             </tr>
             <tr>
                     <td>
                         <p>Profesion</p>
-                        <input type="text" placeholder="titulo academico">
+                        <input type="text" name="Profesion" placeholder="titulo academico">
     
                     </td>
                     <td>
                         <p>especialidad</p>
-                        <input type="text" placeholder="tipo de especialidad">
+                        <input type="text" name="especialidad" placeholder="tipo de especialidad">
     
                     </td>
                 </tr>
@@ -76,18 +76,18 @@
                 </td>
                 <td>
                     <p>Telefono</p>
-                    <input type="text" placeholder="Ingrese Telefono">
+                    <input type="text" name="Telefono" placeholder="Ingrese Telefono">
 
                 </td>
             </tr>
             <tr>
                 <td>
                     <p>ID</p>
-                    <input type="text" placeholder="Ingrese su ID">
+                    <input type="text" name="ID"  placeholder="Ingrese su ID">
                 </td>
                 <td>
                     <p>E-Mail</p>
-                    <input type="text" placeholder="Ingrese su E-Mail">
+                    <input type="text" name="email" placeholder="Ingrese su E-Mail">
                     
                     
                 </td>
@@ -95,17 +95,17 @@
             <tr>
                 <td>
                     <p>Password</p>
-                    <input type="password" placeholder="Ingrese su Password">
+                    <input type="password" name="Password" placeholder="Ingrese su Password">
                 </td>
                 <td>
                     <p>Confirmacion Password</p>
-                    <input type="password" placeholder="Ingrese nuevamente el password">                    
+                    <input type="password" name="Password" placeholder="Ingrese nuevamente el password">                    
                 </td>
             </tr>
             <tr>     
                 <td>
                     <p>Dirrección</p>
-                    <input type="text" placeholder="Ingrese su Dirrección">                   
+                    <input type="text" name="Dirrección" placeholder="Ingrese su Dirrección">                   
                 </td>        
                 <td>
                     <p>Nacionalidad</p>
@@ -121,7 +121,8 @@
         </table>
         <hr>
 
-        <button type="button" style="width: 100%" onclick="">Registrar</button>
+        
+        <input type="submit" value="Registrar">
         
         <hr>
     </div>
@@ -130,5 +131,6 @@
 
 
     <script> </script>
+    </form> 
 </body>
 </html>
