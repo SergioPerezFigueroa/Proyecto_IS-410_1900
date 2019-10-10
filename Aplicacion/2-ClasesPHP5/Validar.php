@@ -1,36 +1,38 @@
 <?php
-class ValidarUsuario{
-    private $usuario;
-    private $error;
 
+class Validar{
 
-    public function __construct($Certificado, $conexion)
+	private $Estudiante;
+	private $Registro;
+	private $Instructor;
+	private $Curso;
+	
 
+	public function __construct ($Estudiante, $Registro, $Instructor, $Curso){
+		$this->Estudiante = $Estudiante;
+		$this->Registro = $Registro;
+		$this->Instructor = $Instructor;
+		$this->Curso= $Curso;
+	}
 
-    $error="";
-    if(!$this->variable_inicializada($Certificado)){
+	public function obtenerEstudiante(){
+		return $this->Estudiante;
+	}
 
-        $this->usuario= null; 
-        $this->eror= "sus datos ingresados no son correctos";
+	public function obtenerNombreRegistro(){
+		return $this->Registro;
+	}
 
-    }else {
-        $this->usuario= RepositorioUsuario::obtenercertificado($Certificado,$conexion);
+	public function obtenerInstructor(){
+		return $this->Instructor;
+	}
 
-    }
+	public function obtenerCurso(){
+		return $this->Curso;
+	}
 
-    //variables contiene datos 
-    private function variable_inicializada($variable){
-        if(isset($variable && empty($variable))){
-        return false 
-        }else{
-            return true ; 
-        }
-        
-    } 
-
+	
 
 }
-
-
 
 ?>

@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Aprendamos</title>
+    <title>Aprendamos_Ingreso_notas</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" media="screen" href="main.css">
     <script src="main.js"></script>
@@ -16,88 +16,71 @@
         }
 
         .main{
-            margin : 50px 35%;
+            margin : 0px 28%;
             padding: 15px;
-            height: 200px;
+            
             background-color: white;
         }
-        
+
         .fondo{
             background-image:url(img/fondo.jpg);
             background-size: cover;
             background-repeat: no-repeat;
         }
-
-        .table{
-            margin : 50px 25%;
-            padding: 15px;
-            background-color: white;
-        }
     
     </style>
 
 
-    <img src="img/logo.png" style="height: 100px; margin : 0px 35%;">
+    <img src="img/logo.png" style="height: 200px; margin : 0px 28%;">
 
 </head>
 <body class="fondo">
     
-    
-
-    <div class="main">
-        <h5 class="Parrafo">Ingresar Calificaciones</h5>
-        <hr>
-        <p class="Parrafo">Curso</p>
-        <select id="curso" style="width:100%" >
-            <option value=""></option>
-            <option value="HTML DESDE CERO">HTML DESDE CERO</option>
-            <option value="JAVA DESDE CERO">JAVA DESDE CERO</option>
-            <option value="PHP DESDE CERO">PHP DESDE CERO</option>
-            <option value="POSTGRESQL DESDE CERO">POSTGRESQL DESDE CERO</option>
-            <option value="JAVASCRIPT DESDE CERO">JAVASCRIPT DESDE CERO</option>
-        </select><br>
-        <button type="button" style="margin: 15px 40%;" onclick="">Mostrar</button><br>
-        <hr>
-    </div>
-
-    <div class="table">
-
-        <table border="1" cellspacing="0" cellpadding="15" style="width:100%">
-            <thead>
-                <tr>
-                    <th>ALUMNO</th>
-                    <th>ID</th>
-                    <th>CALIFICACION</th>                  
-                </tr>
-            </thead>
-            <tbody id="table-calificaciones">
-                <tr>
-                    <td>Fausto Alejandro Flores Zepeda</td>
-                    <td>20151001553</td>
-                    <td><input type="text"> </td>
-                </tr>
-                <tr>
-                    <td>Sergio Reiniery Garay</td>
-                    <td>20151001554</td>
-                    <td><input type="text"> </td>
-                </tr>
-                <tr>
-                    <td>Juan Orlando Hernandez Alvarado</td>
-                    <td>20151001555</td>
-                    <td><input type="text"> </td>
-                </tr>
-
-            </tbody>
-
-            
-        </table>  
+    <form  method= "POST" action="../2-ClasesPHP5/Registro_Notas.php">
         
-        <button type="button" style="margin: 15px 40%;" onclick="">Enviar</button>
+    
+    <div class="main">
+        
+        <p class="Parrafo">Registro de Calificaciones </p>        
+        
+        <hr>
+        <table style="width:100%">
+            <tr>
+                <td>
+                    <p>Nombre</p>
+                    <input type="text" name="Estudiante" placeholder="Ingrese su Apellido" >
+                </td>
 
+                <td>
+                    <p>Registro NO.</p>
+                    <input type="text" name="Registro" placeholder="Ingrese su ID">
+                </td>
+               
+            </tr>
+            <tr>
+                <td>
+                    <p>Nombre de Instructor:</p>
+                    <input type="text" name="Instructor" placeholder="Ingrese Nombre" >
+                </td>
+                <td>
+                    <p>Curso:</p>
+                    <input type="text" name="Curso" placeholder="Ingrese el curso" >
+
+                </td>
+            </tr>
+            
+           
+        </table>
+        <hr>
+
+      
+        <input type="submit" value="Enviar">
+        
+        <hr>
     </div>
 
 
-    <script> </script>
+</form> 
+
 </body>
 </html>
-
