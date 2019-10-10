@@ -4,14 +4,15 @@ class Validar{
 
 	private $Estudiante;
 	private $Registro;
-	private $Instructor;
+
 	private $Curso;
 	
 
-	public function __construct ($Estudiante, $Registro, $Instructor, $Curso){
+
+
+	public function __construct ($Estudiante, $Registro, $Curso){
 		$this->Estudiante = $Estudiante;
 		$this->Registro = $Registro;
-		$this->Instructor = $Instructor;
 		$this->Curso= $Curso;
 	}
 
@@ -19,12 +20,8 @@ class Validar{
 		return $this->Estudiante;
 	}
 
-	public function obtenerNombreRegistro(){
+	public function obtenerNumeroDeRegistro(){
 		return $this->Registro;
-	}
-
-	public function obtenerInstructor(){
-		return $this->Instructor;
 	}
 
 	public function obtenerCurso(){

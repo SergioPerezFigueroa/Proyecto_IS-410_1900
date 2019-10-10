@@ -1,5 +1,5 @@
 <?php 
-
+//Trae los datos de html
 include_once 'config.php';
 include_once 'conexion.php';
 include_once 'Usuario.php';
@@ -8,16 +8,16 @@ include_once 'ValidadorRegistro.php';
 
 Conexion::abrirConexion();
 
-$validador = new ValidadorRegistro($_POST['Estudiante'], $_POST['Registro'], ($_POST['Instructorr']), ($_POST['Curso']), Conexion::obtenerConexion());
+$validador = new ValidadorRegistro($_POST['Estudiante'], $_POST['Registro'], ($_POST['Curso']), Conexion::obtenerConexion());
 
 if ($validador->RegistroValido()) {
 	# code...
 
-	$Registro = new Usuario('', $validador->obtenerEstudiante(), $validador->obtenerRegisto(), $validador->obtenerInstructor() , $validador->obtenerCurso(), '1');
+	$Registro = new Usuario('', $validador->obtenerEstudiante(), $validador->obtenerNumeroDeRegisto(), $validador->obtenerCurso(), '1');
 
-	$insertar_Registro= RepositorioUsuario::insertarRegistro(Conexion::obtenerConexion(), $Registro);
+	$insertar_Certificado= RepositorioUsuario::insertarRegistro(Conexion::obtenerConexion(), $Registro);
 
-	if ($insertar_Registro) {
+	if ($insertar_Certificado) {
 		# code...
 		echo "insertado";
 	}
