@@ -2,8 +2,8 @@
 //Trae los datos de html
 include_once 'config.php';
 include_once 'conexion.php';
-include_once 'Usuario.php';
-include_once 'RepositorioUsuario.php';
+include_once 'certificado.php';
+include_once 'Repositorioertificado.php';
 include_once 'ValidadorRegistro.php';
 
 Conexion::abrirConexion();
@@ -15,7 +15,7 @@ if ($validador->RegistroValido()) {
 
 	$Registro = new Usuario('', $validador->obtenerEstudiante(), $validador->obtenerNumeroDeRegisto(), $validador->obtenerCurso(), '1');
 
-	$insertar_Certificado= RepositorioUsuario::insertarRegistro(Conexion::obtenerConexion(), $Registro);
+	$insertar_Certificado= RepositorioCertificado::insertarRegistro(Conexion::obtenerConexion(), $Registro);
 
 	if ($insertar_Certificado) {
 		# code...
